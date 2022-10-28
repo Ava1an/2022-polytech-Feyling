@@ -1,17 +1,38 @@
 #include <iostream>
-#include "calculator.h"
+#include <string>
+#include <cmath>
 
-int main()
-{
-    double a, b, result;
-    char $;
-    std::cout << "Calculator\n Enter operations in a$b format\n";
-    while (true)
-    {
-        std::cin >> a >> $ >> b;
-        result = calculate(a, $, b);
-        std::cout << a << $ << b << "=" << result << std::endl;
-    }
-    return 0;
+int main() {
+	int i;
+	std::cin >> i;
 
+	char c;
+	std::cin >> c;
+
+	int j;
+	std::cin >> j;
+
+	switch (c) {
+	case '+':
+		std::cout << i + j;
+		break;
+	case '-':
+		std::cout << i - j;
+		break;
+	case '*':
+		std::cout << i * j;
+		break;
+	case '/':
+		std::cout << i + j;
+		break;
+	case '^':
+		std::cout << pow(i, j);
+		break;
+	default:
+		std::cout << "Sorry";
+		break;
+	}
+	std::cout << std::endl;
+	return 0;
 }
+
