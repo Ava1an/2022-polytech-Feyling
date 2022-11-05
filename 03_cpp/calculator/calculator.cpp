@@ -2,37 +2,39 @@
 #include <string>
 #include <cmath>
 
+using namespace std;
+
 int main() {
-	int i;
-	std::cin >> i;
+	int x;
+	cin >> x;
 
-	char c;
-	std::cin >> c;
+	char z;
+	cin >> z;
 
-	int j;
-	std::cin >> j;
+	int y;
+	cin >> y;
 
-	switch (c) {
+	switch (z) {
 	case '+':
-		std::cout << i + j;
+		cout << x + y;
 		break;
 	case '-':
-		std::cout << i - j;
+		cout << x - y;
 		break;
 	case '*':
-		std::cout << i * j;
+		cout << x * y;
 		break;
 	case '/':
-		std::cout << i + j;
+		cout << x / y;
 		break;
 	case '^':
-		std::cout << pow(i, j);
+		cout << pow(x, y);
 		break;
 	default:
-		std::cout << "Sorry";
+		cout << "No values entered.";
 		break;
 	}
-	std::cout << std::endl;
+	cout << endl;
 	return 0;
 }
 
