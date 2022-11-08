@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.1)
+project(Search_l)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(Search_l search_120l.cpp search_120b.cpp)
