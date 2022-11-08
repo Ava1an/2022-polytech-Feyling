@@ -3,4 +3,4 @@ project(gcd)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(gcd main.cpp)
+add_executable(gcd gcd.cpp)
