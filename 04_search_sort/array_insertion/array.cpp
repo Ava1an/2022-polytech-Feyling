@@ -29,3 +29,7 @@ int search_position(int* arr, int n, int x)
 }
 
 
+int insert_sorted(int* arr, int n, int x)
+{
+	insert(arr, n, x, search_position(arr, n, x));
+}
