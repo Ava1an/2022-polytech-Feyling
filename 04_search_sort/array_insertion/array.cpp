@@ -14,3 +14,18 @@ int insert(int* arr, int n, int x, int p)
 	arr[n] = x;
 	return 0;
 }
+
+
+int search_position(int* arr, int n, int x)
+{
+	for (int i = 0; i < n; i++)
+	{
+		if (arr[i] > x)
+		{
+			return i;
+		}
+	}
+	return n;
+}
+
+
