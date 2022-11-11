@@ -5,36 +5,42 @@
 using namespace std;
 
 int main() {
-	int x;
-	cin >> x;
 
-	char z;
-	cin >> z;
+	while (true)
+	{
+		int x;
+		cin >> x;
 
-	int y;
-	cin >> y;
+		char z;
+		cin >> z;
 
-	switch (z) {
-	case '+':
-		cout << x + y;
-		break;
-	case '-':
-		cout << x - y;
-		break;
-	case '*':
-		cout << x * y;
-		break;
-	case '/':
-		cout << x / y;
-		break;
-	case '^':
-		cout << pow(x, y);
-		break;
-	default:
-		cout << "No values entered.";
-		break;
+		int y;
+		cin >> y;
+
+		switch (z)
+		{
+		case '+':
+			cout << x + y;
+			break;
+		case '-':
+			cout << x - y;
+			break;
+		case '*':
+			cout << x * y;
+			break;
+		case '/':
+			cout << x / y;
+			break;
+		case '^':
+			cout << pow(x, y);
+			break;
+		default:
+			cout << "No values entered.";
+
+		}
+
+
+		cout << endl;
 	}
-	cout << endl;
 	return 0;
 }
-
