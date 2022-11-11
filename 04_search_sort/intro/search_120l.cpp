@@ -1,4 +1,4 @@
-#include <oistream>
+#include <iostream>
 
 using namespace std;
 
@@ -10,25 +10,16 @@ int main()
 -79, -11, 21, 26, 48, 68, 69, 72, 93, 95, 99, 115, 120, 156, 164, 181, 200, 231, 252, 288,
 304, 336, 343, 364, 402, 419, 486, 546, 584, 595, 596, 606, 627, 636, 666, 666, 683, 701,
 740, 766, 780, 782, 794, 802, 829, 832, 837, 858, 875, 881, 882, 883, 883, 947, 959 };
-	int x = 120;
-	int min = 0;
-	int max = 90 - 1;
-	int mid;
-	while (min <= max)
-	{
-		mid = (min + max) / 2;
 
-		if (x == arr[mid])
+	int x = 120;
+
+	for (int i = 0; i < 90; i++)
+	{
+		if (arr[i] == x)
 		{
-			cout << mid;
-		}
-		else if (x < arr[mid])
-		{
-			max = mid - 1;
-		}
-		else
-		{
-			min = mid + 1;
+			cout << "Search complete: " << i;
+			break;
+
 		}
 	}
 	return 0;
